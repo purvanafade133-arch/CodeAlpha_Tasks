@@ -2,40 +2,63 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Calculator</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Portfolio</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-<div class="calculator">
-  <input type="text" id="display" disabled>
+<header>
+  <h1>Purva Nafade</h1>
+  <nav>
+    <a href="#about">About</a>
+    <a href="#skills">Skills</a>
+    <a href="#projects">Projects</a>
+    <a href="#contact">Contact</a>
+  </nav>
+</header>
 
-  <div class="buttons">
-    <button onclick="clearDisplay()">C</button>
-    <button onclick="deleteLast()">⌫</button>
-    <button onclick="appendValue('/')">÷</button>
-    <button onclick="appendValue('*')">×</button>
+<section id="about">
+  <h2>About Me</h2>
+  <p>
+    I am a passionate web development student skilled in HTML, CSS, and JavaScript.
+    I enjoy building interactive and responsive websites.
+  </p>
+</section>
 
-    <button onclick="appendValue('7')">7</button>
-    <button onclick="appendValue('8')">8</button>
-    <button onclick="appendValue('9')">9</button>
-    <button onclick="appendValue('-')">−</button>
+<section id="skills">
+  <h2>Skills</h2>
+  <ul>
+    <li>HTML</li>
+    <li>CSS</li>
+    <li>JavaScript</li>
+    <li>Java</li>
+    <li>MySQL</li>
+  </ul>
+</section>
 
-    <button onclick="appendValue('4')">4</button>
-    <button onclick="appendValue('5')">5</button>
-    <button onclick="appendValue('6')">6</button>
-    <button onclick="appendValue('+')">+</button>
-
-    <button onclick="appendValue('1')">1</button>
-    <button onclick="appendValue('2')">2</button>
-    <button onclick="appendValue('3')">3</button>
-    <button onclick="calculate()">=</button>
-
-    <button class="zero" onclick="appendValue('0')">0</button>
-    <button onclick="appendValue('.')">.</button>
+<section id="projects">
+  <h2>Projects</h2>
+  <div class="project">
+    <h3>Calculator</h3>
+    <p>Basic calculator using HTML, CSS and JavaScript.</p>
   </div>
-</div>
 
-<script src="script.js"></script>
+  <div class="project">
+    <h3>Image Gallery</h3>
+    <p>Responsive image gallery with navigation.</p>
+  </div>
+</section>
+
+<section id="contact">
+  <h2>Contact</h2>
+  <p>Email: purva@example.com</p>
+  <p>Phone: 1234567890</p>
+</section>
+
+<footer>
+  <p>© 2026 Purva Nafade</p>
+</footer>
+
 </body>
 </html>
